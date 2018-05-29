@@ -258,8 +258,16 @@ textarea {
     background: #edfaff url('../img/bg-header.svg') no-repeat center bottom / 100% auto;
     padding-bottom: 27vw;
 }
-header {
-    padding-top: 16px;
+header {    
+    transition: all 250ms ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+}
+header.scroll {
+    background-color: #042a58;
+    z-index: 10;
 }
 header ul {
     list-style: none;
@@ -267,6 +275,8 @@ header ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    height: 60px;
+    align-items: center;
 }
 header ul li {
     font-size: 18px;
@@ -281,6 +291,9 @@ header ul li {
 header ul li.current a {
     color: #042a58;    
 }
+header.scroll ul li.current a {
+    color: #fff;
+}
 header ul li a {
     color: #2180ea;
     text-decoration: none;
@@ -291,8 +304,8 @@ header ul li a:hover {
 }
 .head__logo {
     width: 251px;
-    margin-top: 72px;
-    margin: 72px auto 0 auto;
+    padding-top: 132px;    
+    margin: 0 auto;
 }
 .head h1 {
     margin: 48px auto 0 auto;
@@ -505,4 +518,159 @@ main h2 {
 .main__howitworks_button {
     margin-top: 64px;
     text-align: center;
+}
+.main__benefits {
+    margin-top: 128px;
+}
+.main__benefits h2 {
+    margin-bottom: 56px;
+}
+.main__benefits_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap; 
+}
+.main__benefits_list li {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    margin-bottom: 80px;
+    padding-top: 143px;
+}
+.main__benefits_list li.balence {
+    width: 355px;
+    background: url('../img/benefits-balence.svg') no-repeat center top / 120px 120px;
+}
+.main__benefits_list li.security {
+    width: 315px;
+    background: url('../img/benefits-security.svg') no-repeat center top / 120px 120px;;
+}
+.main__benefits_list li.share {
+    width: 320px;
+    background: url('../img/benefits-share.svg') no-repeat center top / 120px 120px;;
+}
+.main__benefits_list li.account {
+    width: 355px;
+    background: url('../img/benefits-account.svg') no-repeat center top / 120px 120px;;
+}
+.main__benefits_list li.rating {
+    width: 315px;
+    background: url('../img/benefits-rating.svg') no-repeat center top / 120px 120px;;
+}
+.main__benefits_list li.chart {
+    width: 320px;
+    background: url('../img/benefits-chart.svg') no-repeat center top / 120px 120px;;
+}
+.main__benefits_button {
+    text-align: center;
+}
+.main__subscribe {
+    margin-top: 128px;
+    text-align: center;
+}
+.main__subscribe h2 {
+    margin-bottom: 32px;    
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0a4e8e;
+}
+.main__subscribe_form {
+    display: inline-flex;
+    margin: auto;
+    border-radius: 44px;
+    background-color: #effaff;
+    padding: 16px 20px;
+}
+.main__subscribe_form-input {
+    width: 390px;
+    margin-right: 16px;
+}
+.main__subscribe_form-input input {
+    width: 100%;
+    height: 56px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 56px;
+    letter-spacing: normal;
+    color: #0a4e8e;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.main__subscribe_form-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(10, 78, 142, 0.3);
+}
+.main__subscribe_form-input input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(10, 78, 142, 0.3);
+}
+.main__subscribe_form-input input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(10, 78, 142, 0.3);
+}
+.main__subscribe_form-input input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(10, 78, 142, 0.3);
+}
+.main__subscribe_form-button button {
+    display: inline-block;
+    width: 200px;
+    height: 56px;
+    background: #0a4e8e;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 28px;    
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.main__subscribe_form-button button::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('../img/bg-button.svg') no-repeat center / 56px 56px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main__subscribe_form-button button::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('../img/bg-button.svg') no-repeat center / 56px 56px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+.main__subscribe_form-button button:hover {
+    background-color: #013464;
+}
+.main__provides {
+    margin-top: 128px;
+}
+.main__provides h2 {
+    margin-bottom: 100px;
 }

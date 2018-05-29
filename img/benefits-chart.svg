@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#2180EA" d="M22 82h11v28H22z"/>
+        <path fill="#FFF" fill-opacity=".1" d="M22 82h6v28h-6z"/>
+        <path fill="#2180EA" d="M35 73h11v37H35zM48 65h11v45H48zM61 56.667h11V110H61z"/>
+        <path fill="#FFF" fill-opacity=".1" d="M48 65h6v45h-6zM61 57h6v53h-6zM35 73h6v37h-6z"/>
+        <path fill="#2180EA" d="M74 49h11v61H74z"/>
+        <ellipse cx="60" cy="111.375" fill="#EDEFF8" rx="54.875" ry="2.625"/>
+        <path fill="#FFF" fill-opacity=".1" d="M74 49h6v61h-6z"/>
+        <path fill="#2180EA" d="M87 40h11v70H87z"/>
+        <path fill="#FFF" fill-opacity=".1" d="M87 40h6v70h-6z"/>
+        <path fill="#0A4E8E" fill-rule="nonzero" d="M16 110.5c-.828 0-1.5-1.455-1.5-3.25S15.172 104 16 104h87.523c.828 0 1.5 1.455 1.5 3.25s-.672 3.25-1.5 3.25H16zM20.379 71.216a1.5 1.5 0 1 1-1.758-2.432l74-53.5a1.5 1.5 0 1 1 1.758 2.432l-74 53.5z"/>
+        <path fill="#0A4E8E" fill-rule="nonzero" d="M93.701 15.768l-10.421-1.28a1.5 1.5 0 1 1 .365-2.977l13.4 1.645-1.646 13.4a1.5 1.5 0 0 1-2.977-.366l1.28-10.422z"/>
+    </g>
+</svg>

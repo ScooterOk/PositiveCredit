@@ -19,8 +19,8 @@
 
 <body>
   <div class="head">
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="wrapper">
         <ul>
           <li class="current">
             <a href="">About the System</a>
@@ -38,7 +38,9 @@
             <a href="">Contact Us</a>
           </li>
         </ul>
-      </header>
+      </div>        
+    </header>
+    <div class="wrapper">      
       <div class="head__logo">
         <img src="./img/logo.svg" alt="">
       </div>
@@ -50,10 +52,12 @@
   </div>
   <main>
     <div class="wrapper">
+
       <article class="main__about">
         <h2>About the System</h2>
         <div class="main__about_text">Positive Credit  is a distributed trust and reputation system for businesses and individuals, based on a history of actions recorded to the blockchain. Businesses can use Positive Credit to grant access to others to enable them to read lists of verified transactions from the blockchain to prove reputation, trustworthiness, and creditworthiness.</div>
       </article>
+
       <article class="main__howitworks">
         <h2>How it works</h2>
         <div class="main__howitworks_steps clearfix">
@@ -75,6 +79,53 @@
         <div class="main__howitworks_button">
           <a href="" class="main-button">Take part in this</a>
         </div>
+      </article>
+
+      <article class="main__benefits">
+        <h2>Key Benefits</h2>
+        <ul class="main__benefits_list">
+          <li class="balence">Credit risk mitigation</li>
+          <li class="security">Secure global credit recording system</li>
+          <li class="share">Data access limited to specific parties indicated by a user</li>
+          <li class="account">Low cost to users to attest to transactions, thus a low cost to maintain a credit profile</li>
+          <li class="rating">Reputation by consensus.  Parties testifying to transactions have their own reputations </li>
+          <li class="chart">Right way risk.  “Good”  counterparties who would prefer to have their records known</li>
+        </ul>
+        <div class="main__benefits_button">
+          <a href="" class="main-button">I want to use it</a>
+        </div>
+      </article>
+
+      <article class="main__subscribe">
+        <h2>Do you want more information?</h2>
+        <form action="">
+          <section class="main__subscribe_form">          
+            <div class="main__subscribe_form-input">
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div class="main__subscribe_form-button">
+              <button>Subscribe</button>            
+            </div>
+          </section>
+        </form>
+      </article>
+
+      <article class="main__provides">
+        <h2>Positive Credit Provides</h2>
+        <section class="main__provides_profile">
+          <h3>Positive Credit Profile</h3>
+          <p>A decentralized credit profile for your business focused on your business’s creditworthiness and trustworthiness.<br><br>Your business’s Positive Credit profile may be used to:</p>
+          <ul>
+            <li>
+              <h4>Creditworthiness</h4>
+              <div>Prove creditworthiness in a lending transaction to obtain a loan or bond.</div>
+            </li>
+            <li>
+              <h4>Trustworthiness</h4>
+              <div>Prove trustworthiness or execution capability to new business partners.</div>
+            </li>
+          </ul>
+        </section>
       </article>
     </div>
   </main>
