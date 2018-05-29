@@ -1,0 +1,508 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    color: #042a58;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.main-button {
+    width: 276px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #0a4e8e;
+    position: relative;
+    display: inline-block;    
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 56px;
+    white-space: nowrap;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+.main-button:hover {
+    background-color: #013464;
+}
+.main-button::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('../img/bg-button.svg') no-repeat center / 56px 56px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main-button::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('../img/bg-button.svg') no-repeat center / 56px 56px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+
+/*==============================================================
+                            Head Styles
+ ==============================================================*/
+.head {
+    background: #edfaff url('../img/bg-header.svg') no-repeat center bottom / 100% auto;
+    padding-bottom: 27vw;
+}
+header {
+    padding-top: 16px;
+}
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -0.7px;
+    text-align: center;
+    
+}
+header ul li.current a {
+    color: #042a58;    
+}
+header ul li a {
+    color: #2180ea;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+header ul li a:hover {
+    color: #1da2db;
+}
+.head__logo {
+    width: 251px;
+    margin-top: 72px;
+    margin: 72px auto 0 auto;
+}
+.head h1 {
+    margin: 48px auto 0 auto;
+    padding: 0;
+    width: 580px;    
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+}
+.head__button {
+    text-align: center;
+    margin-top: 48px;
+}
+
+
+/*==============================================================
+                        Main Styles
+ ==============================================================*/
+main {
+    margin-top: 128px;
+}
+main h2 {
+    margin: 0;
+    padding: 0;        
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+}
+.main__about {
+     width: 820px;
+     margin: auto;
+}
+.main__about h2 {
+    margin-bottom: 32px;
+}
+.main__about_text {    
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: #042a58;
+}
+.main__howitworks {
+    margin-top: 128px;
+}
+.main__howitworks h2 {
+    margin-bottom: 48px;
+}
+.main__howitworks_steps {
+    background: url('../img/howitworks-line.svg') no-repeat center 310px;
+}
+.main__howitworks_step-1 {
+    background: url('../img/howitworks-step-1.svg') no-repeat right 0;
+    padding-top: 370px;
+    position: relative;
+    width: 343px;
+    float: left;
+    margin: 0 175px 0 7px;    
+}
+.main__howitworks_step-1::before {
+    content: "1";
+    display: block;
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    border: 5px solid #2180ea;    
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 58px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.main__howitworks_steps span {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    display: block;
+}
+.main__howitworks_steps b {
+    display: inline-block;    
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+}
+.main__howitworks_step-2 {
+    background: url('../img/howitworks-step-2.svg') no-repeat center 0;
+    padding-top: 370px;
+    position: relative;
+    width: 343px;
+    float: left;    
+}
+.main__howitworks_step-2::before {
+    content: "2";
+    display: block;
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    border: 5px solid #2180ea;    
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 58px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.main__howitworks_step-3 {
+    background: url('../img/howitworks-step-3.svg') no-repeat center 0;
+    padding-top: 370px;
+    position: relative;
+    width: 459px;
+    float: left;
+    margin: 175px 90px 0 65px;
+}
+.main__howitworks_step-3 span {
+    width: 285px;
+    margin: auto;    
+}
+.main__howitworks_step-3::before {
+    content: "3";
+    display: block;
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    border: 5px solid #2180ea;    
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 58px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.main__howitworks_step-4 {
+    background: url('../img/howitworks-step-4.svg') no-repeat center 0;
+    padding-top: 370px;
+    position: relative;
+    width: 385px;
+    float: left;
+    margin: 175px 0 0 0;
+}
+.main__howitworks_step-4::before {
+    content: "4";
+    display: block;
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    border: 5px solid #2180ea;    
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 58px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.main__howitworks_button {
+    margin-top: 64px;
+    text-align: center;
+}
