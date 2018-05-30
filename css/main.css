@@ -219,6 +219,7 @@ textarea {
     color: #ffffff;
     text-decoration: none;
     transition: all 200ms ease;
+    text-transform: uppercase;
 }
 .main-button:hover {
     background-color: #013464;
@@ -643,6 +644,7 @@ main h2 {
     color: #ffffff;
     transition: all 200ms ease;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .main__subscribe_form-button button::before {
     content: "";
@@ -673,4 +675,99 @@ main h2 {
 }
 .main__provides h2 {
     margin-bottom: 100px;
+}
+.main__provides_profile {
+    padding-left: 545px;
+    background: url('../img/positive-credit-profile.svg') no-repeat left top / 504px 400px;
+}
+.main__provides h3 {
+    margin: 0 0 21px 0;
+    padding: 0;        
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0a4e8e;
+}
+.main__provides h4 {
+    margin: 0;
+    padding: 0;    
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #0a4e8e;
+}
+.main__provides p {
+    margin-bottom: 40px;    
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #042a58;
+}
+.main__provides ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main__provides ul li {
+    background: url('../img/bg-ul-list.svg') no-repeat 0 4px / 25px 25px;
+    padding-left: 46px;    
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #042a58;
+    margin-bottom: 32px;
+}
+.main__provides ul li:last-child {
+    margin-bottom: 0;
+}
+.main__provides_ownership {
+    background: url('../img/positive-credit-ownership.svg') no-repeat right top / 504px 410px;
+    padding: 155px 515px 0 0;
+    margin-top: 104px;
+}
+.main__provides_portability {
+    background: url('../img/positive-credit-portability.svg') no-repeat left top / 504px 400px;
+    height: 400px;
+    margin-top: 128px;
+    padding: 81px 0 0 545px;
+}
+.main__provides_security {
+    background: url('../img/positive-credit-security.svg') no-repeat right top / 504px 400px;
+    height: 400px;
+    margin-top: 120px;
+    padding: 83px 515px 0 0;
+}
+.main__provides_analytics {
+    background: url('../img/positive-credit-analytics.svg') no-repeat left top / 504px 400px;
+    height: 400px;
+    margin-top: 104px;
+    padding: 120px 0 0 545px;
+}
+.main__provides_control {
+    background: url('../img/positive-credit-control.svg') no-repeat right top / 504px 400px;
+    margin-top: 120px;
+    height: 400px; 
+    padding: 111px 515px 0 0;
+}
+.main__provides_accuracy {
+    background: url('../img/positive-credit-accuracy.svg') no-repeat left top / 504px 400px;
+    height: 400px;
+    margin-top: 104px;
+    padding: 60px 0 0 545px;
+}
+.main__provides_button {
+    margin-top: 108px;
+    text-align: center;
 }
