@@ -260,11 +260,66 @@ textarea {
     padding-bottom: 27vw;
 }
 header {    
-    transition: all 250ms ease;
+    transition: background-color 300ms ease, height 150ms ease;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;    
+    width: 100%;   
+    z-index: 10; 
+}
+.header__mobile_button {
+    width: 55px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/menu.svg') no-repeat right center;
+    transition: all 150ms ease;
+    display: none;
+}
+.header__mobile_subscribe {
+    display: none;
+}
+.header__mobile_subscribe h3 {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0a4e8e;
+}
+.header__mobile_subscribe .main__subscribe_form {
+    display: flex;
+    margin: 0 8px;
+    padding: 8px 8px 8px 24px;
+    justify-content: space-between;
+}
+.header__mobile_subscribe .main__subscribe_form-button button {
+    width: 136px;
+}
+.header__mobile_subscribe .main__subscribe_form-button button span {
+    position: relative;
+    z-index: 1;
+}
+.header__mobile_subscribe .main__subscribe_form-input input,
+.header__mobile_subscribe .main__subscribe_form-button button {
+    height: 48px;
+}
+.header__mobile_subscribe .main__subscribe_form-button button::before,
+.header__mobile_subscribe .main__subscribe_form-button button::after {
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+}
+header.active {
+    height: 100%;
+}
+header.active .header__mobile_button {
+    background: url('../img/menu-close.svg') no-repeat 16px center;
 }
 header.scroll {
     background-color: #042a58;
@@ -300,6 +355,12 @@ header ul li a {
     text-decoration: none;
     transition: all 200ms ease;
 }
+header.scroll ul li a {
+    color: #1da2db;
+}
+header.scroll ul li a:hover {
+    color: #2180ea;
+}
 header ul li a:hover {
     color: #1da2db;
 }
@@ -307,6 +368,9 @@ header ul li a:hover {
     width: 251px;
     padding-top: 132px;    
     margin: 0 auto;
+}
+.head__logo img {
+    width: 100%;
 }
 .head h1 {
     margin: 48px auto 0 auto;
@@ -770,4 +834,270 @@ main h2 {
 .main__provides_button {
     margin-top: 108px;
     text-align: center;
+}
+.main__whylist {
+    margin-top: 128px;
+}
+.main__whylist h2 {
+    margin-bottom: 60px;
+}
+.main__whylist_list {
+    display: flex;
+    justify-content: space-between;
+}
+.main__whylist_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main__whylist_list ul:first-child {
+    width: 455px;
+}
+.main__whylist_list ul:last-child {
+    width: 425px;
+}
+.main__whylist_list ul li {
+    background: url('../img/bg-ul-list.svg') no-repeat 0 4px / 25px 25px;
+    padding-left: 46px;    
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #042a58;
+    margin-bottom: 24px;
+}
+.main__whylist_list ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/*==============================================================
+                        Footer Styles
+ ==============================================================*/
+footer {
+    background-color: #2180ea;
+    margin-top: 121px;
+    padding-top: 124px;
+}
+.footer__contacts {
+    background: #fff url('../img/bg-footer.svg') no-repeat center bottom / 100% auto;
+    padding-bottom: 232px;
+}
+.footer__contacts h2 {
+    margin: 0;
+    padding: 72px 0 16px 0;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+}
+.footer__contacts_text {
+    width: 500px;    
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    margin: 0 auto 32px auto;
+}
+.footer__contacts_form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 792px;
+    margin: auto;
+}
+.footer__contacts_form-input {
+    width: 384px;
+}
+.footer__contacts_form-input input {
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #effaff;
+    border: none;
+    outline: none;        
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: #042a58;
+    padding: 0 23px;    
+}
+.footer__contacts_form-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-input input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-input input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-input input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-textarea {
+    width: 100%;
+    padding-top: 24px;
+}
+.footer__contacts_form-textarea textarea {
+    width: 792px;
+    height: 164px;
+    border-radius: 28px;
+    background-color: #effaff;
+    border: none;
+    outline: none;
+    resize: none;        
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: #042a58;
+    padding: 14px 23px;
+}
+.footer__contacts_form-textarea textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-textarea textarea::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-textarea textarea:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-textarea textarea:-moz-placeholder { /* Firefox 18- */
+  color: rgba(10, 78, 142, 0.3);
+}
+.footer__contacts_form-submit {
+    margin-top: 32px;
+    text-align: center;
+}
+.footer__contacts_form-submit button {
+    display: inline-block;
+    width: 276px;
+    height: 56px;
+    background: #0a4e8e;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 28px;    
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: all 200ms ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.footer__contacts_form-submit button::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('../img/bg-button.svg') no-repeat center / 56px 56px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.footer__contacts_form-submit button::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('../img/bg-button.svg') no-repeat center / 56px 56px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+.footer__contacts_form-submit button:hover {
+    background-color: #013464;
+}
+.footer__contacts_mail {
+    margin-top: 32px;
+    text-align: center;
+}
+.footer__contacts_mail p {    
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #042a58;
+    padding: 0;
+    margin: 0;
+}
+.footer__contacts_mail a {    
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2180ea;
+    text-decoration: none;
+}
+.footer__contacts_mail a:hover {
+    text-decoration: underline;
+}
+.footer__copyright {
+    display: flex;
+    height: 114px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.29;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer__copyright a {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-right: 56px;
+    transition: all 200ms ease;
+}
+.footer__copyright a::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url('../img/gotop-button.svg') no-repeat center;
+    position: absolute;
+    top: 50%;
+    right: -56px;
+    transform: translateY(-50%);
+}
+.footer__copyright a:hover {
+    opacity: 0.75;
 }

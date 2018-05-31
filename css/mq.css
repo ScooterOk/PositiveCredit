@@ -1,0 +1,413 @@
+@media (max-width: 1000px) {
+    
+.wrapper {
+        width: auto;
+    }
+    .header__mobile_button {
+        display: block;
+    }
+    header.active .header__mobile_subscribe {
+        display: block;
+    }
+    header {
+        background-color: #042a58;
+        height: 48px;
+        overflow: hidden;
+        padding-bottom: 32px;
+    }
+    header ul {
+        background-color: #042a58;
+        display: none;
+        height: auto;
+    }
+    header.active {
+        background-color: #fff;
+        overflow: auto;
+    }
+    header.active ul {
+        display: block;
+        padding: 40px 0 48px 0;
+    }
+    header ul li {
+        margin-bottom: 24px;
+    }
+    header ul li a {
+        color: #368beb;
+    }
+    header ul li.current a {
+        color: #fff;
+    }
+    .head {
+        padding-bottom: 42vw;
+    }
+    .head__logo {
+        width: 176px;
+        padding-top: 104px;
+        margin: 0 auto;
+    }
+    .head h1 {
+        margin: 40px 16px 0 16px;
+        padding: 0;
+        width: auto;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.78;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0a4e8e;
+    }
+    .head__button {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main-button {
+        width: auto;
+        max-width: 350px;
+        margin: 0 auto;
+        height: 48px;
+        border-radius: 24px;        
+        display: block;    
+        font-size: 14px;        
+        line-height: 48px;        
+    }    
+    .main-button::before {        
+        width: 48px;
+        height: 48px;
+        background: url('../img/bg-button.svg') no-repeat center / 48px 48px;        
+    }
+    .main-button::after {        
+        width: 48px;
+        height: 48px;
+        background: url('../img/bg-button.svg') no-repeat center / 48px 48px;        
+    }
+    main {
+        margin-top: 72px;
+    }
+    main h2 {
+        font-size: 28px;
+    }
+    .main__about {
+        width: auto;
+        margin: 0 16px;
+    }
+    .main__about_text {        
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: center;        
+    }
+    .main__howitworks {
+        margin-top: 72px;
+    }
+    .main__howitworks_steps {
+        background: none;
+    }
+    .main__howitworks_step-1 {
+        background: url(../img/howitworks-step-1.svg) no-repeat center top / 62.5vw auto;
+        padding-top: 70vw;
+        float: none;
+        margin: 0;
+    }
+    .main__howitworks_step-1::before {                
+        width: 48px;
+        height: 48px;        
+        border: 4px solid #2180ea;
+        font-size: 20px;        
+        line-height: 40px;        
+        top: 53vw;        
+    }
+    .main__howitworks_steps span {
+        font-size: 16px;        
+        line-height: 1.63;
+        margin-bottom: 8px;   
+        padding: 0 10vw;
+    }
+    .main__howitworks_steps b {        
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-style: normal;        
+        line-height: 1.71;
+        padding: 0 10vw;
+    }
+    .main__howitworks_step-2 {
+        background: url(../img/howitworks-step-2.svg) no-repeat center top / 62.5vw auto;
+        padding-top: 70vw;
+        float: none;
+        margin: 0;
+    }
+    .main__howitworks_step-2::before {
+        width: 48px;
+        height: 48px;        
+        border: 4px solid #2180ea;
+        font-size: 20px;        
+        line-height: 40px;        
+        top: 53vw;        
+    }
+    .main__howitworks_step-3 {
+        background: url(../img/howitworks-step-3.svg) no-repeat center top / 85vw auto;
+        padding-top: 70vw;
+        float: none;
+        margin: 0;
+    }
+    .main__howitworks_step-3::before {
+        width: 48px;
+        height: 48px;        
+        border: 4px solid #2180ea;
+        font-size: 20px;        
+        line-height: 40px;        
+        top: 53vw;        
+    }
+    .main__howitworks_step-4 {
+        background: url(../img/howitworks-step-4.svg) no-repeat center top / 75vw auto;
+        padding-top: 70vw;
+        float: none;
+        margin: 0;
+    }
+    .main__howitworks_step-4::before {
+        width: 48px;
+        height: 48px;        
+        border: 4px solid #2180ea;
+        font-size: 20px;        
+        line-height: 40px;        
+        top: 53vw;        
+    }
+    .slick-prev {
+        width: 29px;
+        height: 24px;
+        display: block;
+        background: transparent url('../img/arrow-prev.svg') no-repeat center;
+        border: none;
+        position: absolute;
+        left: 16px;
+        top: 53vw;
+        margin-top: 10px;
+        font-size: 0;
+        color: transparent;
+        z-index: 1;
+        outline: none;
+    }
+    .slick-next {
+        width: 29px;
+        height: 24px;
+        display: block;
+        background: transparent url('../img/arrow-next.svg') no-repeat center;
+        border: none;
+        position: absolute;
+        right: 16px;
+        top: 53vw;
+        margin-top: 10px;
+        font-size: 0;
+        color: transparent;
+        z-index: 1;
+        outline: none;
+    }
+    .slick-dots {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slick-dots li {
+        width: 24px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #d1d4eb;
+        float: left;
+        margin-right: 8px;
+    }
+    .slick-dots li.slick-active {
+        background-color: #2180ea;
+    }
+    .slick-dots li:last-child {
+        margin-right: 0;
+    }
+    .slick-dots button {
+        display: none;
+    }
+    .main__howitworks_button {
+        margin-top: 32px;        
+    }
+    .main__benefits {
+        margin-top: 72px;
+    }
+    .main__benefits_list {
+        display: block;        
+    }
+    .main__benefits_list li {
+        width: auto;
+        margin: 0 auto 40px auto;
+        font-size: 14px;
+    }    
+    .main__benefits_button {
+        padding: 0 16px;
+    }
+    .main__subscribe {
+        margin-top: 74px;
+    }
+    .main__subscribe h2 {
+        font-size: 18px;
+    }
+    .main__subscribe_form {
+        display: flex;
+        padding: 8px 8px 8px 24px;
+        margin-left: 8px;
+        margin-right: 8px; 
+    }
+    .main__subscribe_form-input {
+        width: 100%;
+        margin-right: 16px;
+    }
+    .main__subscribe_form-input input {
+        height: 48px;
+        font-size: 13px;                
+        line-height: 48px;
+    }
+    .main__subscribe_form-button button {
+        display: inline-block;
+        width: 136px;
+        height: 48px;        
+        border-radius: 24px;
+        font-size: 14px;
+    }
+    .main__subscribe_form-button button::before {     
+        width: 48px;
+        height: 48px;
+        background: url(../img/bg-button.svg) no-repeat center / 48px 48px;
+    }
+    .main__subscribe_form-button button::after {        
+        width: 48px;
+        height: 48px;
+        background: url(../img/bg-button.svg) no-repeat center / 48px 48px;        
+    }
+    .main__subscribe_form-button button span {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
+    .main__provides {
+        margin-top: 72px;
+        padding: 0 16px;
+    }
+    .main__provides h2 {
+        margin-bottom: 32px;
+    }
+    .main__provides_profile {
+        padding-left: 0;
+        background: url(../img/positive-credit-profile.svg) no-repeat left 35px / 90vw auto;
+    }
+    .main__provides_profile h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 70vw;
+    }
+    .main__provides p {
+        margin-bottom: 23px;
+        font-size: 16px;        
+        line-height: 1.63;
+    }
+    .main__provides ul li {
+        background: url(../img/bg-ul-list.svg) no-repeat 0 4px / 25px 25px;
+        padding-left: 46px;
+        font-size: 16px;        
+        line-height: 1.63;        
+        margin-bottom: 16px;
+    }
+    .main__provides ul li h4 {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .main__provides_ownership {
+        background: url(../img/positive-credit-ownership.svg) no-repeat right 35px / 90vw auto;
+        padding: 0;
+        margin-top: 72px;
+    }
+    .main__provides_ownership h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 75vw;
+    }
+    .main__provides_portability {
+        background: url(../img/positive-credit-portability.svg) no-repeat left 35px / 90vw auto;
+        height: auto;
+        margin-top: 72px;
+        padding: 0;
+    }
+    .main__provides_portability h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 75vw;
+    }
+    .main__provides_security {
+        background: url(../img/positive-credit-security.svg) no-repeat right 40px / 90vw auto;
+        height: auto;
+        margin-top: 72px;
+        padding: 0;
+    }
+    .main__provides_security h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 75vw;   
+    }
+    .main__provides_analytics {
+        background: url(../img/positive-credit-analytics.svg) no-repeat left 30px / 90vw auto;
+        height: auto;
+        margin-top: 72px;
+        padding: 0;
+    }
+    .main__provides_analytics h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 70vw;      
+    }
+    .main__provides_control {
+        background: url(../img/positive-credit-control.svg) no-repeat right 30px / 90vw auto;
+        margin-top: 72px;
+        height: auto;
+        padding: 0;
+    }
+    .main__provides_control h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 70vw;
+    }
+    .main__provides_accuracy {
+        background: url(../img/positive-credit-accuracy.svg) no-repeat left 35px / 90vw auto;
+        height: auto;
+        margin-top: 72px;
+        padding: 0;
+    }
+    .main__provides_accuracy h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 75vw;
+    }
+    .main__provides_button {
+        margin-top: 46px;
+        padding-left: 16px;
+        padding-right: 16px;        
+    }
+
+
+    
+    
+    
+    
+    footer {
+        display: none;
+    }
+
+
+
+
+
+}

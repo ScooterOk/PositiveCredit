@@ -13,13 +13,16 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">  
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mq.css">
 </head>
 
 <body>
   <div class="head">
     <header>
+      <div class="header__mobile_button"></div>
       <div class="wrapper">
         <ul>
           <li class="current">
@@ -38,6 +41,19 @@
             <a href="">Contact Us</a>
           </li>
         </ul>
+        <div class="header__mobile_subscribe">
+          <h3>Do you want more information?</h3>
+          <section class="main__subscribe_form">          
+            <div class="main__subscribe_form-input">
+              <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="main__subscribe_form-button">
+              <button>
+                <span>Subscribe</span>
+              </button>            
+            </div>
+          </section>
+        </div>
       </div>        
     </header>
     <div class="wrapper">      
@@ -104,7 +120,9 @@
               <input type="email" placeholder="Enter your email" />
             </div>
             <div class="main__subscribe_form-button">
-              <button>Subscribe</button>            
+              <button>
+                <span>Subscribe</span>
+              </button>            
             </div>
           </section>
         </form>
@@ -162,13 +180,67 @@
         <div class="main__provides_button">
           <a href="" class="main-button">I want to use it</a>
         </div>
-      </article>      
+      </article>
+
+      <article class="main__whylist">
+        <h2>Why Positive Credit?</h2>
+        <div class="main__whylist_list">
+          <ul>
+            <li>A business wants to prove it is creditworthy to a new vendor or supplier.</li>
+            <li>A vendor wants to record which of its customers pay regularly and which do not, to share with other partners.</li>
+            <li>A business wants to enter a new territory or market, and wants to use its reputation or history in other markets to establish credit or trustworthiness in the new market.</li>
+          </ul>
+          <ul>
+            <li>A vendor wants to validate that a new customer is creditworthy.</li>
+            <li>A consumer wants to access lending products after moving to a new country. </li>
+            <li>A lender wants a global, comprehensive credit profile of a business or consumer.</li>
+          </ul>
+        </div>
+      </article>
     </div>
   </main>
+
+  <footer>
+    <div class="wrapper">
+      <section class="footer__contacts">
+        <h2>Contact Us</h2>
+        <div class="footer__contacts_text">If you are interested in collaboration, do let us know and we will be happy to share and cooperate.</div>
+        <form action="">
+          <div class="footer__contacts_form">
+            <div class="footer__contacts_form-input">
+              <input type="text" placeholder="Name" autocomplete="disable" />
+            </div>
+            <div class="footer__contacts_form-input">
+              <input type="email" placeholder="Email or phone number" autocomplete="disable" />
+            </div>
+            <div class="footer__contacts_form-textarea">
+              <textarea placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="footer__contacts_form-submit">
+            <button>Submit</button>
+          </div>
+        </form>
+        <div class="footer__contacts_mail">
+          <p>Or just email on</p>
+          <a href="mailto:info@positive.credit">info@positive.credit</a>
+        </div>
+      </section>
+      <section class="footer__copyright">
+        <div>
+          © 2018 Positive Credit All rights reserved
+        </div>
+        <div>
+          <a href="javascript:void(0)" id="go-top">Back to the top</a>
+        </div>
+      </section>
+    </div>
+  </footer>
   
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>  
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>    
+  <script src="js/vendor/slick.min.js"></script>
   <script src="js/main.js"></script>
   
 </body>
